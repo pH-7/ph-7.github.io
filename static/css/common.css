@@ -29,25 +29,5 @@
     width:80%;
 }
 
-/** Fork on Github **/
-.fork_icon {
-  opacity:  0.5;
-  position: fixed;
-  top: 0;
-  right: 0;
-  border: 0;
-  z-index: 9999;
-  transition: opacity .50s ease-in-out;
-  -webkit-transition: opacity .50s ease-in-out;
-  -moz-transition: opacity .50s ease-in-out;
-  -o-transition: opacity .50s ease-in-out;
-  -ms-transition: opacity .50s ease-in-out;
-  -khtml-transition: opacity .50s ease-in-out;
-}
-
-.fork_icon:hover {
-  opacity: 1;
-}
-
 /** AddThis **/
 .addthis_toolbox .at15t_compact{margin-right:0}
