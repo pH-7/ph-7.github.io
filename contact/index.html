@@ -1,0 +1,152 @@
+---
+layout: default
+title: Contact Us
+---
+
+<section class="row">
+
+    <h1 class="hero-unit">Contact Us</h1>
+
+    <form class="form-horizontal" id="contact_form" method="post" action="mailto:ph7software@gmail.com" enctype="text/plain">
+      <fieldset>
+        <legend>Contact</legend>
+
+        <div class="control-group">
+          <label class="control-label" for="input01">Last Name</label>
+          <div class="controls">
+            <input type="text" class="input-xlarge" id="last_name" name="last_name" rel="popover" data-content="Enter your Last Name." data-original-title="Last Name" required="required" />
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="input01">First Name</label>
+          <div class="controls">
+            <input type="text" class="input-xlarge" id="first_name" name="first_name" rel="popover" data-content="Enter your First Name." data-original-title="First Name" required="required" />
+          </div>
+        </div>
+
+     <div class="control-group">
+        <label class="control-label" for="input01">Email</label>
+          <div class="controls">
+            <input type="email" class="input-xlarge" id="email" name="email" rel="popover" data-content="What’s your email address?" data-original-title="Email" required="required" />
+
+          </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="input01">WebSite</label>
+          <div class="controls">
+            <input type="url" class="input-xlarge" id="site" name="site" rel="popover" data-content="Your Website (Optional)" data-original-title="Website" />
+
+          </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="input01">Subject</label>
+          <div class="controls">
+            <input type="text" class="input-xlarge" id="subject" name="subject" rel="popover" data-content="Your Subject" data-original-title="Subject" required="required" />
+
+          </div>
+    </div>
+
+
+     <div class="control-group">
+        <label class="control-label" for="input01">Message</label>
+          <div class="controls">
+           <textarea class="input-xlarge" id="message" name="message" rel="popover" data-content="Your Message" data-original-title="Message" rows="4" required="required"></textarea>
+          </div>
+
+    </div>
+
+
+    <div class="control-group">
+        <label class="control-label" for="input01"></label>
+          <div class="controls">
+           <button type="submit" class="btn btn-success" rel="tooltip" title="first tooltip">Send</button>  <button type="reset" class="btn btn-success" rel="tooltip" title="first tooltip">Reset</button>
+
+          </div>
+
+    </div>
+
+    </fieldset>
+    </form>
+
+</section>
+
+<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-transition.js"></script>
+<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-alert.js"></script>
+<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-modal.js"></script>
+<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-dropdown.js"></script>
+<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-scrollspy.js"></script>
+<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tab.js"></script>
+<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tooltip.js"></script>
+<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-popover.js"></script>
+<script src="http://jzaefferer.github.com/jquery-validation/jquery.validate.js"></script>
+
+<script>$(document).ready(function(){
+    $('input').hover(function()
+    {
+         $(this).popover('show')
+    });
+    $("#contact_form").validate({
+                rules:{
+                    last_name:{
+                        required:true,
+                        minlength:2
+                    },
+                    first_name:{
+                        required:true,
+                        minlength:2
+                    },
+                    email:{
+                        required:true,
+                        email:true
+                    },
+                    site:{
+                        url:true,
+                    },
+                    subject:{
+                        required:true,
+                        minlength:4
+                    },
+                    message:{
+                        required:true,
+                        minlength:10
+                    },
+                },
+                messages:{
+                    last_name:{
+                        required:"Enter your Last Name",
+                        minlength:"Last name must be at least 2 characters long"
+                    },
+                    first_name:{
+                        required:"Enter your First Name",
+                        minlength:"First name must be at least 2 characters long"
+                    },
+                    email:{
+                        required:"Enter your email address",
+                        email:"Enter valid email address"
+                    },
+                    site:{
+                        site:"Please enter a valid website"
+                    },
+                    subject:{
+                        required:"Enter your subject",
+                        minlength:"Subject must be at least 4 characters long"
+                    },
+                    message:{
+                        required:"Enter your message",
+                        minlength:"Subject must be at least 10 characters long"
+                    },
+                },
+                errorClass: "help-inline",
+                errorElement: "span",
+                highlight:function(element, errorClass, validClass) {
+                    $(element).parents('.control-group').addClass('error');
+                },
+                unhighlight: function(element, errorClass, validClass) {
+                    $(element).parents('.control-group').removeClass('error');
+                    $(element).parents('.control-group').addClass('success');
+                }
+            });
+        });
+      </script>

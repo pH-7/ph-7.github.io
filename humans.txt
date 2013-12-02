@@ -1,0 +1,46 @@
+       _   _   _____ 
+ _ __ | | | | |___  |
+| '_ \| |_| |    / / 
+| |_) |  _  |   / /  
+| .__/|_| |_|  /_/   
+|_|                  
+
+
+/* TEAM */
+
+    Author: Pierre-Henry Soria
+    Twitter: @mypH7
+    Project: pH(7) Framework Site, etc.
+    Site: http://ph-7.github.com
+    Contact: ph7software [at] gmail.com
+
+
+/* THANKS */
+
+    Project: jQuery 
+    Site: http://jquery.com
+
+    Project: Jekyll 
+    Site: http://jekyllrb.com
+
+    Project: Bootstrap 
+    Site: http://twitter.github.com/bootstrap/
+
+    Name: Jörn Zaefferer
+    Project: jQuery Validation 
+    
+    Name: Jason Frame
+    Project: Tipsy 
+    Site: http://onehackoranother.com/projects/jquery/tipsy/
+    
+    Name: AddThis
+    Site: http://www.addthis.com
+
+
+/* SITE */
+
+    Language: English
+    Standards: HTML5, CSS3 
+    Components: jQuery, Bootstrap, Tipsy, Jekyll
+    IDE: Geany, FileZilla
+    Software: GIMP, Fedora

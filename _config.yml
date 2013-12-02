@@ -1,0 +1,22 @@
+name: pH # Site Name
+description: Scripts and Software # Site Description
+url: http://ph-7.github.com # URL
+repo: http://github.com/pH-7 # URL of Repository
+analytics_id: UA-31501397-1 # Google Analytics ID
+# 'Follow me' URL
+follow_tweet: http://twitter.com/mypH7
+follow_fb: http://www.facebook.com/pages/PH/139154132885066
+follow_googleplus: http://plus.google.com/105682125704779208123
+follow_youtube: http://www.youtube.com/pH7Software
+
+permalink: /:categories/:title
+auto: true
+server: true
+pygments: true
+paginate: 10
+exclude:
+  - Rakefile
+  - README.txt
+  - LICENSE.txt
+  - CNAME
+

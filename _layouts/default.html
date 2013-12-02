@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}</title>
+  {% if page.description %}<meta name="description" content="{{ page.description }}" />{% endif %}
+  {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}" />{% endif %}
+  <meta name="author" content="Pierre-Henry SORIA" />
+  <link rel="stylesheet" href="/static/css/bootstrap.css" />
+  <link rel="stylesheet" href="/static/css/bootstrap-responsive.css" />
+  <link rel="stylesheet" href="/static/css/common.css" />
+  <link rel="stylesheet" href="/static/css/ajph.css" />
+  <link rel="stylesheet" href="/static/css/tipsy.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{ site.url }}/feed.xml" />
+  <link rel="alternate" type="application/xml" title="Sitemap" href="{{ site.url }}/sitemap.xml" />
+  <link rel="author" href="{{ site.url }}/humans.txt" />
+
+  {% include analytics.html %}
+
+</head>
+<body>
+
+    {% include header.html %}
+
+    <div class="container">
+      <div id="ajph"><div id="sub_ajph">
+        {{ content }}
+      </div></div>
+    <hr />
+
+   {% include footer.html %}
+
+</body>
+</html>

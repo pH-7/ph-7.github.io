@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<section class="row">
+
+  <h2 class="hero-unit">{{ page.title }}</h2>
+
+  <article>
+    <time datetime="{{ page.date }}"></time>
+    {{ content }}
+    <p class="small"><em>{{ page.date | date_to_string }}</em></p>
+  <article>
+
+</section>

@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<section class="row">
+  {{ content }}
+  <h3>Related Posts</h3>
+
+  <ul class="unstyled">
+    {% for post in site.posts %}
+      <li><a href="{{ post.url }}" title="{{ post.title }}" data-load="ajax">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+
+</section>
