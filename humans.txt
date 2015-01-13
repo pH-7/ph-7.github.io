@@ -10,9 +10,10 @@
 
     Author: Pierre-Henry Soria
     Twitter: @mypH7
-    Project: pH(7) Framework Site, etc.
+    Project: My GitHub Site ;-)
+    Group: pH(7) Software
     Site: http://ph-7.github.com
-    Contact: ph7software [at] gmail.com
+    Contact: ph7software {AT} gmail {DOT} com
 
 
 /* THANKS */
